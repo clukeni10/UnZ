@@ -10,7 +10,7 @@ SUCESSO:rgb(0, 1, 1)
 ERRO: #EF4444
 AVISO:FBBF24 */
 
-export default function Login() {
+export default function Register() {
   return (
     <Box
       h="100vh"
@@ -22,7 +22,7 @@ export default function Login() {
       <Box
         bg="#EDEDF0"
         w="400px"
-        h="400px"
+        h="500px"
         rounded="3xl"
         boxShadow="0px 4px 8px rgba(0,0,0,0.3)"
         display="flex"
@@ -37,6 +37,19 @@ export default function Login() {
                   height="100px"
                   bg="#6C63FF"
             ></Box>
+            <Box>
+          <Text color="#1E1E2F" fontSize="xl">
+            Nome de usuário
+          </Text>
+          <Input
+            type="text"
+            w="300px"
+            p="2"
+            borderColor="#6C63FF"
+            bg="white"
+          ></Input>
+        </Box>
+        
         <Box>
           <Text color="#1E1E2F" fontSize="xl">
             E-mail
@@ -69,12 +82,12 @@ export default function Login() {
           fontSize="2xl"
           fontWeight="300"
         >
-          Entrar
+          Cadastrar
         </Button>
 
         <Text color="#6B7280">
-          Não tem conta?
-          <Link color="#6C63FF">Cadastre-se.</Link>
+          Já tem conta?
+          <Link color="#6C63FF">Entre.</Link>
         </Text>
       </Box>
     </Box>
